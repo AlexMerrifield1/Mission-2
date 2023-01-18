@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Set ana array that has space for all possible roll totals
+        //Set an array that has space for all possible roll totals
         int[] counts = new int[13];
         int numRolls;
         Console.Write("Welcome to the dice throwing simulator!" + "\n");
@@ -22,14 +22,6 @@ class Program
             int rollTotal = roll1 + roll2;
             counts[rollTotal]++;            
         }
-
-        ////Populate Totals, amount of times rolled and the percentage out of 100 compared to the numRolls given by user
-        //Console.WriteLine("Total\tCount\tPercentage");
-        //for (int i = 2; i <= 12; i++)
-        //{
-        //    double percentage = (double)counts[i] / numRolls * 100;
-        //    Console.WriteLine("{0}\t{1}\t{2:F1}%", i, counts[i], percentage);
-        //}
 
         Console.Write("DICE ROLLING SIMULATION RESULTS" + "\n");
         Console.Write("Each \"*\" represents 1% of the total number of rolls." + "\n");
